@@ -11,3 +11,8 @@ You can author your README using Visual Studio Code.  Here are some useful edito
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 ** Enjoy!**
+
+# vs-freemarker
+FreeMarker language colorization extension for Visual Studio Code
+
+This is based on the TextMate bundle found on [this](https://github.com/bburbach/textmate-freemarker-bundle) repo.
