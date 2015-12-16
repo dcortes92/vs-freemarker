@@ -1,0 +1,26 @@
+{
+	"name": "FreeMarker",
+	"displayName": "FreeMarker",
+	"description": "Syntax highlight for the Apache Template Engine",
+	"version": "0.0.1",
+	"publisher": "dcortes92",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "ftl",
+			"aliases": ["FreeMarker", "ftl"],
+			"extensions": [".ftl"],
+			"configuration": "./ftl.configuration.json"
+		}],
+		"grammars": [{
+			"language": "ftl",
+			"scopeName": "text.html.ftl",
+			"path": "./syntaxes/ftl.tmLanguage"
+		}]
+	}
+}
