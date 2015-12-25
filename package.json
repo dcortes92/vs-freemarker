@@ -4,6 +4,10 @@
 	"description": "Syntax highlight for the Apache Template Engine",
 	"version": "0.0.1",
 	"publisher": "dcortes92",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dcortes92/vs-freemarker.git"  
+    },
 	"engines": {
 		"vscode": "^0.10.1"
 	},
