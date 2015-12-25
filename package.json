@@ -1,7 +1,7 @@
 {
 	"name": "FreeMarker",
 	"displayName": "FreeMarker",
-	"description": "Syntax highlight for the Apache Template Engine",
+	"description": "Syntax highlight for FreeMarker",
 	"version": "0.0.1",
 	"publisher": "dcortes92",
     "repository": {
