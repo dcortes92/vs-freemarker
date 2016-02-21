@@ -25,6 +25,10 @@
 			"language": "ftl",
 			"scopeName": "text.html.ftl",
 			"path": "./syntaxes/ftl.tmLanguage"
-		}]
+		}],
+        "snippets": [{
+            "language": "ftl",
+            "path": "./snippets/snippets.json"
+        }]
 	}
 }

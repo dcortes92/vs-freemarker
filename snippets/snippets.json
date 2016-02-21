@@ -1,0 +1,104 @@
+{
+	"@sb": {
+		"prefix": "@sb",
+		"body": "<@spring.bind \"${1:object.field}\"/>$0",
+		"description": "@spring.bind",
+		"scope": "text.html.ftl"
+	},
+	"@sfi": {
+		"prefix": "@sfi",
+		"body": "<@spring.formInput path=\"${1:path}\"/>$0",
+		"description": "@spring.formInput",
+		"scope": "text.html.ftl"
+	},
+	"@sfp": {
+		"prefix": "@sfp",
+		"body": "<@spring.formPasswordInput path=\"${1:path}\"/>$0",
+		"description": "@spring.formPasswordInput",
+		"scope": "text.html.ftl"
+	},
+	"@sm": {
+		"prefix": "@sm",
+		"body": "<@spring.message code=\"$1\"/>$0",
+		"description": "@spring.message",
+		"scope": "text.html.ftl"
+	},
+	"@sma": {
+		"prefix": "@sma",
+		"body": "<@spring.messageArgs \"${1:code}\", [${2:args}]/>$0",
+		"description": "@spring.messageArgs",
+		"scope": "text.html.ftl"
+	},
+	"@st": {
+		"prefix": "@st",
+		"body": "<@spring.theme code=\"$1\"/>$0",
+		"description": "@spring.theme",
+		"scope": "text.html.ftl"
+	},
+	"#": {
+		"prefix": "#",
+		"body": "<#$1>$0</${1/\\s.*$//}>",
+		"description": "Directive (#)",
+		"scope": "text.html.ftl"
+	},
+	"@": {
+		"prefix": "@",
+		"body": "<@$1>$0</${1/\\s.*$//}>",
+		"description": "Macro (@)",
+		"scope": "text.html.ftl"
+	},
+	"#/": {
+		"prefix": "#/",
+		"body": "<#$1/>$0",
+		"description": "Simple Directive (#/)",
+		"scope": "text.html.ftl"
+	},
+	"@/": {
+		"prefix": "@/",
+		"body": "<@$1/>$0",
+		"description": "Simple Macro (@/)",
+		"scope": "text.html.ftl"
+	},
+	"#a": {
+		"prefix": "#a",
+		"body": "<#assign ${1:var}>${2:value}</#assign>$0",
+		"description": "assign long (#a)",
+		"scope": "text.html.ftl"
+	},
+	"#=": {
+		"prefix": "#=",
+		"body": "<#assign ${1:var}=${2:value}/>$0",
+		"description": "assign short (#=)",
+		"scope": "text.html.ftl"
+	},
+	"#e": {
+		"prefix": "#e",
+		"body": "<#else>$0",
+		"description": "else (#e)",
+		"scope": "text.html.ftl"
+	},
+	"#if": {
+		"prefix": "#if",
+		"body": "<#if (${1:condition})>\n\t$0\n</#if>",
+		"description": "if (#if)",
+		"scope": "text.html.ftl"
+	},
+	"#li": {
+		"prefix": "#li",
+		"body": "<#list ${1:collection} as ${2:element}>\n\t$0\n</#list>",
+		"description": "list (#li)",
+		"scope": "text.html.ftl"
+	},
+	"#l": {
+		"prefix": "#l",
+		"body": "<#local ${1:var}=${2:value}/>$0",
+		"description": "local short (#l)",
+		"scope": "text.html.ftl"
+	},
+	"#m": {
+		"prefix": "#m",
+		"body": "<#macro ${1:name} ${2:parameters}>\n\t$0\n</#macro>",
+		"description": "macro (#m)",
+		"scope": "text.html.ftl"
+	}
+}
