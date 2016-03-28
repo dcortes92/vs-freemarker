@@ -4,6 +4,7 @@
 	"description": "Syntax highlight for FreeMarker",
 	"version": "0.0.2",
 	"publisher": "dcortes92",
+    "icon": "images/logo.svg",
     "repository": {
       "type": "git",
       "url": "https://github.com/dcortes92/vs-freemarker.git"  
