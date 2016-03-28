@@ -1,35 +1,46 @@
 {
-	"name": "FreeMarker",
-	"displayName": "FreeMarker",
-	"description": "Syntax highlight for FreeMarker",
-	"version": "0.0.2",
-	"publisher": "dcortes92",
+    "name": "FreeMarker",
+    "displayName": "FreeMarker",
+    "description": "Syntax highlight for FreeMarker",
+    "version": "0.0.3",
+    "publisher": "dcortes92",
     "icon": "images/logo.svg",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/dcortes92/vs-freemarker.git"  
+        "type": "git",
+        "url": "https://github.com/dcortes92/vs-freemarker.git"
     },
-	"engines": {
-		"vscode": "^0.10.1"
-	},
-	"categories": [
-		"Languages"
-	],
-	"contributes": {
-		"languages": [{
-			"id": "ftl",
-			"aliases": ["FreeMarker", "ftl"],
-			"extensions": [".ftl"],
-			"configuration": "./ftl.configuration.json"
-		}],
-		"grammars": [{
-			"language": "ftl",
-			"scopeName": "text.html.ftl",
-			"path": "./syntaxes/ftl.tmLanguage"
-		}],
-        "snippets": [{
-            "language": "ftl",
-            "path": "./snippets/snippets.json"
-        }]
-	}
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "ftl",
+                "aliases": [
+                    "FreeMarker",
+                    "ftl"
+                ],
+                "extensions": [
+                    ".ftl"
+                ],
+                "configuration": "./ftl.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ftl",
+                "scopeName": "text.html.ftl",
+                "path": "./syntaxes/ftl.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "ftl",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
 }
