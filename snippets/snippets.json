@@ -59,22 +59,28 @@
 		"description": "Simple Macro (@/)",
 		"scope": "text.html.ftl"
 	},
-	"#a": {
-		"prefix": "#a",
+	"#assign": {
+		"prefix": "#assign",
 		"body": "<#assign ${1:var}>${2:value}</#assign>$0",
-		"description": "assign long (#a)",
+		"description": "assign long (#assign)",
 		"scope": "text.html.ftl"
 	},
-	"#=": {
-		"prefix": "#=",
+	"#a": {
+		"prefix": "#assign",
 		"body": "<#assign ${1:var}=${2:value}/>$0",
-		"description": "assign short (#=)",
+		"description": "assign short (#assign)",
 		"scope": "text.html.ftl"
 	},
 	"#e": {
 		"prefix": "#e",
-		"body": "<#else>$0",
+		"body": "<#else/>$0",
 		"description": "else (#e)",
+		"scope": "text.html.ftl"
+	},
+	"#eif": {
+		"prefix": "#eif",
+		"body": "<#elseif (${1:condition})/>$0",
+		"description": "elseif (#eif)",
 		"scope": "text.html.ftl"
 	},
 	"#if": {
@@ -100,5 +106,12 @@
 		"body": "<#macro ${1:name} ${2:parameters}>\n\t$0\n</#macro>",
 		"description": "macro (#m)",
 		"scope": "text.html.ftl"
+	},
+	"#include": {
+		"prefix": "#include",
+		"body": "<#include \"${1:resource}\"/>",
+		"description": "include (#include)",
+		"scope": "text.html.ftl"
 	}
+	
 }
