@@ -2,7 +2,7 @@
   "name": "vs-freemarker",
   "displayName": "FreeMarker",
   "description": "Syntax highlight for FreeMarker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "dcortes92",
   "repository": {
     "type": "git",
