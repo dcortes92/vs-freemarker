@@ -60,5 +60,6 @@
         "ftl"
     ],
     "author": "Daniel Cortes <dcortes1892@gmail.com> (http://dcortes92.github.io/)",
-    "license": "MIT"
+    "license": "MIT",
+    "icon": "images/logo.svg"
 }
