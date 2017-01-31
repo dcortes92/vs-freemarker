@@ -112,6 +112,11 @@
 		"body": "<#include \"${1:resource}\"/>",
 		"description": "include (#include)",
 		"scope": "text.html.ftl"
+	},
+	"#function": {
+		"prefix": "#function",
+		"body": "<#function ${1:name} ${2:param1} ${3:param2}>\n\t<#return ($2 + $3)>$0\n</#function>",
+		"description": "function (#function)",
+		"scope": "text.html.ftl"
 	}
-	
 }
