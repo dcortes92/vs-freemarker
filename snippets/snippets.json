@@ -53,10 +53,22 @@
 		"description": "Simple Directive (#/)",
 		"scope": "text.html.ftl"
 	},
+	"#/_": {
+		"prefix": "#/_",
+		"body": "[#$1/]$0",
+		"description": "Simple Directive [#/]",
+		"scope": "text.html.ftl"
+	},
 	"@/": {
 		"prefix": "@/",
 		"body": "<@$1/>$0",
 		"description": "Simple Macro (@/)",
+		"scope": "text.html.ftl"
+	},
+	"@/_": {
+		"prefix": "@/_",
+		"body": "[@$1/]$0",
+		"description": "Simple Macro [@/]",
 		"scope": "text.html.ftl"
 	},
 	"#assign": {
@@ -65,10 +77,34 @@
 		"description": "assign long (#assign)",
 		"scope": "text.html.ftl"
 	},
+	"#assign_": {
+		"prefix": "#assign_",
+		"body": "[#assign ${1:var}]${2:value}[/#assign]$0",
+		"description": "assign long [#assign]",
+		"scope": "text.html.ftl"
+	},
 	"#a": {
-		"prefix": "#assign",
+		"prefix": "#a",
 		"body": "<#assign ${1:var}=${2:value}/>$0",
-		"description": "assign short (#assign)",
+		"description": "assign short (#a)",
+		"scope": "text.html.ftl"
+	},
+	"#a_": {
+		"prefix": "#a_",
+		"body": "[#assign ${1:var}=${2:value}/]$0",
+		"description": "assign short [#assign]",
+		"scope": "text.html.ftl"
+	},
+	"#set": {
+		"prefix": "#set",
+		"body": "<#setting ${1:var}=${2:value}/>$0",
+		"description": "setting short (#set)",
+		"scope": "text.html.ftl"
+	},
+	"#set_": {
+		"prefix": "#set_",
+		"body": "[#setting ${1:var}=${2:value}/]$0",
+		"description": "setting short [#set]",
 		"scope": "text.html.ftl"
 	},
 	"#e": {
@@ -77,10 +113,22 @@
 		"description": "else (#e)",
 		"scope": "text.html.ftl"
 	},
+	"#e_": {
+		"prefix": "#e_",
+		"body": "[#else/]$0",
+		"description": "else [#e]",
+		"scope": "text.html.ftl"
+	},
 	"#eif": {
 		"prefix": "#eif",
 		"body": "<#elseif (${1:condition})/>$0",
 		"description": "elseif (#eif)",
+		"scope": "text.html.ftl"
+	},
+	"#eif_": {
+		"prefix": "#eif_",
+		"body": "[#elseif (${1:condition})/]$0",
+		"description": "elseif [#eif]",
 		"scope": "text.html.ftl"
 	},
 	"#if": {
@@ -89,10 +137,34 @@
 		"description": "if (#if)",
 		"scope": "text.html.ftl"
 	},
+	"#if_": {
+		"prefix": "#if_",
+		"body": "[#if (${1:condition})]\n\t$0\n[/#if]",
+		"description": "if [#if]",
+		"scope": "text.html.ftl"
+	},
 	"#li": {
 		"prefix": "#li",
 		"body": "<#list ${1:collection} as ${2:element}>\n\t$0\n</#list>",
 		"description": "list (#li)",
+		"scope": "text.html.ftl"
+	},
+	"#li_": {
+		"prefix": "#li_",
+		"body": "[#list ${1:collection} as ${2:element}]\n\t$0\n[/#list]",
+		"description": "list [#li]",
+		"scope": "text.html.ftl"
+	},
+	"#g": {
+		"prefix": "#g",
+		"body": "<#global ${1:var}=${2:value}/>$0",
+		"description": "global short (#l)",
+		"scope": "text.html.ftl"
+	},
+	"#g_": {
+		"prefix": "#g_",
+		"body": "[#global ${1:var}=${2:value}/]$0",
+		"description": "global short [#l]",
 		"scope": "text.html.ftl"
 	},
 	"#l": {
@@ -101,10 +173,22 @@
 		"description": "local short (#l)",
 		"scope": "text.html.ftl"
 	},
+	"#l_": {
+		"prefix": "#l_",
+		"body": "[#local ${1:var}=${2:value}/]$0",
+		"description": "local short [#l]",
+		"scope": "text.html.ftl"
+	},
 	"#m": {
 		"prefix": "#m",
 		"body": "<#macro ${1:name} ${2:parameters}>\n\t$0\n</#macro>",
 		"description": "macro (#m)",
+		"scope": "text.html.ftl"
+	},
+	"#m_": {
+		"prefix": "#m_",
+		"body": "[#macro ${1:name} ${2:parameters}]\n\t$0\n[/#macro]",
+		"description": "macro [#m]",
 		"scope": "text.html.ftl"
 	},
 	"#include": {
@@ -113,10 +197,70 @@
 		"description": "include (#include)",
 		"scope": "text.html.ftl"
 	},
+	"#include_": {
+		"prefix": "#include_",
+		"body": "[#include \"${1:resource}\"/]",
+		"description": "include [#include]",
+		"scope": "text.html.ftl"
+	},
 	"#function": {
 		"prefix": "#function",
 		"body": "<#function ${1:name} ${2:param1} ${3:param2}>\n\t<#return ($2 + $3)>$0\n</#function>",
 		"description": "function (#function)",
+		"scope": "text.html.ftl"
+	},
+	"#function_": {
+		"prefix": "#function_",
+		"body": "[#function ${1:name} ${2:param1} ${3:param2}]\n\t[#return ($2 + $3)]$0\n[/#function]",
+		"description": "function [#function]",
+		"scope": "text.html.ftl"
+	},
+	"#sw": {
+		"prefix": "#sw",
+		"body": "<#switch ${1:var}>\n\t<#case ${2:value1}/>$0\n\t\t<#break/>\n\t<#case ${3:value2}/>\n\t\t<#break/>\n\t<#default/>\n</#switch>",
+		"description": "switch (#sw)",
+		"scope": "text.html.ftl"
+	},
+	"#sw_": {
+		"prefix": "#sw_",
+		"body": "[#switch ${1:var}]\n\t[#case ${2:value1}/]$0\n\t\t[#break/]\n\t[#case ${3:value2}/]\n\t\t[#break/]\n\t[#default/]\n[/#switch]",
+		"description": "switch [#sw]",
+		"scope": "text.html.ftl"
+	},
+	"#ca": {
+		"prefix": "#ca",
+		"body": "<#case ${1:value}/>\n\t$0\n\t<#break/>",
+		"description": "case (#case)",
+		"scope": "text.html.ftl"
+	},
+	"#ca_": {
+		"prefix": "#ca_",
+		"body": "[#case ${1:value}/]\n\t$0\n\t[#break/]",
+		"description": "case [#case]",
+		"scope": "text.html.ftl"
+	},
+	"#imp": {
+		"prefix": "#imp",
+		"body": "<#import \"${1:libPath}\" as ${2:alias}/>\n$0",
+		"description": "import <#import>",
+		"scope": "text.html.ftl"
+	},
+	"#imp_": {
+		"prefix": "#imp_",
+		"body": "[#import \"${1:libPath}\" as ${2:alias}/]\n$0",
+		"description": "import [#import]",
+		"scope": "text.html.ftl"
+	},
+	"#att": {
+		"prefix": "#att",
+		"body": "<#attempt>\n\t$0\n<#recover/>\n\t\n</#attempt>",
+		"description": "attempt (#att)",
+		"scope": "text.html.ftl"
+	},
+	"#att_": {
+		"prefix": "#att_",
+		"body": "[#attempt]\n\t$0\n[#recover/]\n\t\n[/#attempt]",
+		"description": "attempt [#att]",
 		"scope": "text.html.ftl"
 	}
 }

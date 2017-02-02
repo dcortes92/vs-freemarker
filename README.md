@@ -8,6 +8,8 @@ Just install the extension and open any `.ftl` file.
 
 This is based on the TextMate bundle found on [this](https://github.com/bburbach/textmate-freemarker-bundle) repo.
 
+It supports lots of snippets: **#if, #else, #assign, #switch, #list**... Just type **#** followed by the first letters of a name of a FreeMarker tag and the editor will propose you all the available autocomplete options.
+
 ## Contributing
 
 Contributions are welcome. Fork the repo and create a pull request with your changes.
