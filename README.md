@@ -24,6 +24,9 @@ Just type **#** followed by the first letters of a FreeMarker tag name and the e
 	
 [/#if]
 ```
+
+![FreeMarker Snippet Example](/images/vs-freemarker-snippet-example.gif "FreeMarker Snippet Example")
+
 #### Snippets list
 
 Shortcut | Description 
