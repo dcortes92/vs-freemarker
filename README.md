@@ -8,7 +8,49 @@ Just install the extension and open any `.ftl` file.
 
 This is based on the TextMate bundle found on [this](https://github.com/bburbach/textmate-freemarker-bundle) repo.
 
-It supports lots of snippets: **#if, #else, #assign, #switch, #list**... Just type **#** followed by the first letters of a name of a FreeMarker tag and the editor will propose you all the available autocomplete options.
+Alternative FreeMarker syntax with square brackets is fully supported.
+
+### Snippets
+Just type **#** followed by the first letters of a FreeMarker tag name and the editor will propose you all the available autocomplete options. Snippets are also available for alternative FreeMarker syntax. They will have the same shortcuts of regular ones, with an underscore '_' character at the end. For instance:
+* with **#if** shortcut, you will get:
+```freemarker
+<#if (condition)>
+	
+</#if>
+```
+* while with **#if_** shortcut the result will be:
+```freemarker
+[#if (condition)]
+	
+[/#if]
+```
+#### Snippets list
+
+Shortcut | Description 
+---------|---------
+\#dir | Directive
+\#d | Simple Directive
+\#m | Macro definition
+@ma | Macro
+@m | Simple Macro
+\#a | #assign short
+\#assign | #assign long
+\#l | #local short
+\#local | #local long
+\#g | #global short
+\#global | #global long
+\#set | #setting short
+\#setting | #setting long
+\#if | #if
+\#e | #else
+\#eif | #elseif
+\#li | #list
+\#include | #include
+\#imp | #import
+\#function | #function / #return
+\#sw | #switch / #case / #default
+\#ca | #case
+\#att | #attempt / #recover
 
 ## Contributing
 
