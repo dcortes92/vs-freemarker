@@ -1,24 +1,29 @@
-<a name="0.0.7"></a>
-## [0.0.7](https://github.com/dcortes92/vs-freemarker/compare/0.0.6...v0.0.7) (2017-02-02)
+# Change Log
 
+## [0.0.8](https://github.com/dcortes92/vs-freemarker/tree/0.0.8) (2017-02-03)
+[Full Changelog](https://github.com/dcortes92/vs-freemarker/compare/0.0.7...0.0.8)
 
-### Features
+**Closed issues:**
 
-* **Snippets:** New snippets (import, switch, case, global, setting, attempt/recover) and improved readme file ([ec483e1](https://github.com/dcortes92/vs-freemarker/commit/ec483e1))
-* **Snippets:** Improved existing snippets (import, switch, case, global, setting, attempt/recover) and improved readme file ([8a9bb22](https://github.com/dcortes92/vs-freemarker/commit/8a9bb22))
+- Fix readme [\#8](https://github.com/dcortes92/vs-freemarker/issues/8)
 
-<a name="0.0.6"></a>
-## [0.0.6](https://github.com/dcortes92/vs-freemarker/compare/0.0.5...v0.0.6) (2017-01-31)
+## [0.0.7](https://github.com/dcortes92/vs-freemarker/tree/0.0.7) (2017-02-02)
+[Full Changelog](https://github.com/dcortes92/vs-freemarker/compare/0.0.6...0.0.7)
 
+**Merged pull requests:**
 
-### Features
+- New snippets and improved readme file [\#7](https://github.com/dcortes92/vs-freemarker/pull/7) ([vinlos](https://github.com/vinlos))
 
-* **Snippets:** Added snippet for function. Updated extension icon. ([399866c](https://github.com/dcortes92/vs-freemarker/commit/399866c)), closes [#6](https://github.com/dcortes92/vs-freemarker/issues/6)
+## [0.0.6](https://github.com/dcortes92/vs-freemarker/tree/0.0.6) (2017-01-31)
+[Full Changelog](https://github.com/dcortes92/vs-freemarker/compare/0.0.5...0.0.6)
 
-<a name="0.0.5"></a>
-## [0.0.5](https://github.com/dcortes92/vs-freemarker/compare/0.0.4...v0.0.5) (2017-01-30)
+**Closed issues:**
 
+- Redesign logo [\#6](https://github.com/dcortes92/vs-freemarker/issues/6)
+- Add a Changelog [\#4](https://github.com/dcortes92/vs-freemarker/issues/4)
 
-### Features
+## [0.0.5](https://github.com/dcortes92/vs-freemarker/tree/0.0.5) (2017-01-30)
+**Merged pull requests:**
 
-* **Snippets:** Added new snippets: elseif, include, assign(short) ([9e94d0c](https://github.com/dcortes92/vs-freemarker/commit/9e94d0c ))
+- Added new snippets: elseif, include, assign\(short\) [\#3](https://github.com/dcortes92/vs-freemarker/pull/3) ([vinlos](https://github.com/vinlos))
+- amend freemarker comment [\#1](https://github.com/dcortes92/vs-freemarker/pull/1) ([Martin0417](https://github.com/Martin0417))
