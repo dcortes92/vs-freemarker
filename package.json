@@ -6,7 +6,7 @@
     "publisher": "dcortes92",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dcortes92/vs-freemarker.git"
+        "url": "https://github.com/dcortes92/vs-freemarker.git"
     },
     "engines": {
         "vscode": "^0.10.1"
