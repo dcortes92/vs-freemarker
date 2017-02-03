@@ -11,7 +11,7 @@ This is based on the TextMate bundle found on [this](https://github.com/bburbach
 Alternative FreeMarker syntax with square brackets is fully supported.
 
 ### Snippets
-Type **#** followed by the first letters of a FreeMarker tag name and the editor will propose you all the available autocomplete options. Snippets are also available for alternative FreeMarker syntax. They will have the same shortcuts of regular ones, with an underscore \'_\' character at the end. For instance:
+Type **#** followed by the first letters of a FreeMarker tag name and the editor will propose you all the available autocomplete options. Snippets are also available for alternative FreeMarker syntax. They will have the same shortcuts of regular ones, with an underscore \_ character at the end. For instance:
 * with **#if** shortcut, you will get:
     ```
     <#if (condition)>
