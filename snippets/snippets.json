@@ -144,15 +144,15 @@
 		"scope": "text.html.ftl"
 	},
 	"#e": {
-		"prefix": "e",
-		"body": "<else/>$0",
-		"description": "#else (e)",
+		"prefix": "el",
+		"body": "<#else/>$0",
+		"description": "#else (el)",
 		"scope": "text.html.ftl"
 	},
 	"#e_": {
-		"prefix": "e_",
+		"prefix": "el_",
 		"body": "[#else/]$0",
-		"description": "#else [e]",
+		"description": "#else [el]",
 		"scope": "text.html.ftl"
 	},
 	"#eif": {
@@ -172,7 +172,7 @@
 		"body": "<#if (${1:condition})>\n\t$0\n</#if>",
 		"description": "#if (if)",
 		"scope": "text.html.ftl"
-	}
+	},
 	"#if_": {
 		"prefix": "if_",
 		"body": "[#if (${1:condition})]\n\t$0\n[/#if]",
