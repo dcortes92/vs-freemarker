@@ -3,7 +3,7 @@
     <head>${pageTitle}</head>
     <body>
         <div class="container">
-            <#assing var=value/>
+            <#assign var=value/>
         </div>
     </body>
 </html>
