@@ -1,314 +1,314 @@
 {
 	"@sb": {
-		"prefix": "@sb",
+		"prefix": "sb",
 		"body": "<@spring.bind \"${1:object.field}\"/>$0",
 		"description": "@spring.bind",
 		"scope": "text.html.ftl"
 	},
 	"@sfi": {
-		"prefix": "@sfi",
+		"prefix": "sfi",
 		"body": "<@spring.formInput path=\"${1:path}\"/>$0",
 		"description": "@spring.formInput",
 		"scope": "text.html.ftl"
 	},
 	"@sfp": {
-		"prefix": "@sfp",
+		"prefix": "sfp",
 		"body": "<@spring.formPasswordInput path=\"${1:path}\"/>$0",
 		"description": "@spring.formPasswordInput",
 		"scope": "text.html.ftl"
 	},
 	"@sm": {
-		"prefix": "@sm",
+		"prefix": "sm",
 		"body": "<@spring.message code=\"$1\"/>$0",
 		"description": "@spring.message",
 		"scope": "text.html.ftl"
 	},
 	"@sma": {
-		"prefix": "@sma",
+		"prefix": "sma",
 		"body": "<@spring.messageArgs \"${1:code}\", [${2:args}]/>$0",
 		"description": "@spring.messageArgs",
 		"scope": "text.html.ftl"
 	},
 	"@st": {
-		"prefix": "@st",
+		"prefix": "st",
 		"body": "<@spring.theme code=\"$1\"/>$0",
 		"description": "@spring.theme",
 		"scope": "text.html.ftl"
 	},
 	"#dir": {
-		"prefix": "#dir",
+		"prefix": "dir",
 		"body": "<#$1>$0</${1/\\s.*$//}>",
-		"description": "Directive (#dir)",
+		"description": "Directive (dir)",
 		"scope": "text.html.ftl"
 	},
 	"#dir_": {
-		"prefix": "#dir",
+		"prefix": "dir_",
 		"body": "[#$1]$0[/${1/\\s.*$//}]",
-		"description": "Directive [#dir]",
+		"description": "Directive [dir]",
 		"scope": "text.html.ftl"
 	},
 	"@ma": {
-		"prefix": "@ma",
+		"prefix": "ma",
 		"body": "<@$1>$0</${1/\\s.*$//}>",
-		"description": "Macro (@ma)",
+		"description": "Macro (ma)",
 		"scope": "text.html.ftl"
 	},
 	"@ma_": {
-		"prefix": "@ma_",
+		"prefix": "ma_",
 		"body": "[@$1]$0[/${1/\\s.*$//}]",
-		"description": "Macro [@ma]",
+		"description": "Macro [ma]",
 		"scope": "text.html.ftl"
 	},
 	"#d": {
-		"prefix": "#d",
+		"prefix": "d",
 		"body": "<#$1/>$0",
-		"description": "Simple Directive (#d)",
+		"description": "Simple Directive (d)",
 		"scope": "text.html.ftl"
 	},
 	"#d_": {
-		"prefix": "#d/_",
+		"prefix": "d_",
 		"body": "[#$1/]$0",
-		"description": "Simple Directive [#d]",
+		"description": "Simple Directive [d]",
 		"scope": "text.html.ftl"
 	},
 	"@m": {
-		"prefix": "@m",
+		"prefix": "m",
 		"body": "<@$1/>$0",
-		"description": "Simple Macro (@m)",
+		"description": "Simple Macro (m)",
 		"scope": "text.html.ftl"
 	},
 	"@m_": {
-		"prefix": "@m_",
-		"body": "[@$1/]$0",
-		"description": "Simple Macro [@m]",
+		"prefix": "m_",
+		"body": "[$1/]$0",
+		"description": "Simple Macro [m]",
 		"scope": "text.html.ftl"
 	},
 	"#m": {
-		"prefix": "#m",
+		"prefix": "mdef",
 		"body": "<#macro ${1:name} ${2:parameters}>\n\t$0\n</#macro>",
-		"description": "Macro definition (#m)",
+		"description": "Macro definition (mdef)",
 		"scope": "text.html.ftl"
 	},
 	"#m_": {
-		"prefix": "#m_",
+		"prefix": "mdef_",
 		"body": "[#macro ${1:name} ${2:parameters}]\n\t$0\n[/#macro]",
-		"description": "Macro definition [#m]",
+		"description": "Macro definition [mdef]",
 		"scope": "text.html.ftl"
 	},
 	"#assign": {
-		"prefix": "#assign",
+		"prefix": "assign",
 		"body": "<#assign ${1:var}>${2:value}</#assign>$0",
-		"description": "assign long (#assign)",
+		"description": "assign long (assign)",
 		"scope": "text.html.ftl"
 	},
 	"#assign_": {
-		"prefix": "#assign_",
+		"prefix": "assign_",
 		"body": "[#assign ${1:var}]${2:value}[/#assign]$0",
-		"description": "assign long [#assign]",
+		"description": "assign long [assign]",
 		"scope": "text.html.ftl"
 	},
-	"#a": {
-		"prefix": "#a",
+	"a": {
+		"prefix": "a",
 		"body": "<#assign ${1:var}=${2:value}/>$0",
-		"description": "assign short (#a)",
+		"description": "assign short (a)",
 		"scope": "text.html.ftl"
 	},
 	"#a_": {
-		"prefix": "#a_",
+		"prefix": "a_",
 		"body": "[#assign ${1:var}=${2:value}/]$0",
-		"description": "#assign short [#assign]",
+		"description": "#assign short [assign]",
 		"scope": "text.html.ftl"
 	},
 	"#set": {
-		"prefix": "#set",
+		"prefix": "set",
 		"body": "<#setting ${1:var}=${2:value}/>$0",
-		"description": "#setting short (#set)",
+		"description": "#setting short (set)",
 		"scope": "text.html.ftl"
 	},
 	"#set_": {
-		"prefix": "#set_",
+		"prefix": "set_",
 		"body": "[#setting ${1:var}=${2:value}/]$0",
-		"description": "#setting short [#set]",
+		"description": "#setting short [set]",
 		"scope": "text.html.ftl"
 	},
 	"#setting": {
-		"prefix": "#setting",
+		"prefix": "setting",
 		"body": "<#setting ${1:var}>${2:value}</#setting>$0",
-		"description": "setting long (#setting)",
+		"description": "setting long (setting)",
 		"scope": "text.html.ftl"
 	},
 	"#setting_": {
-		"prefix": "#setting_",
+		"prefix": "setting_",
 		"body": "[#setting ${1:var}]${2:value}[/#setting]$0",
-		"description": "setting long [#setting]",
+		"description": "setting long [setting]",
 		"scope": "text.html.ftl"
 	},
 	"#e": {
-		"prefix": "#e",
+		"prefix": "el",
 		"body": "<#else/>$0",
-		"description": "#else (#e)",
+		"description": "#else (el)",
 		"scope": "text.html.ftl"
 	},
 	"#e_": {
-		"prefix": "#e_",
+		"prefix": "el_",
 		"body": "[#else/]$0",
-		"description": "#else [#e]",
+		"description": "#else [el]",
 		"scope": "text.html.ftl"
 	},
 	"#eif": {
-		"prefix": "#eif",
+		"prefix": "eif",
 		"body": "<#elseif (${1:condition})/>$0",
-		"description": "#elseif (#eif)",
+		"description": "#elseif (eif)",
 		"scope": "text.html.ftl"
 	},
 	"#eif_": {
-		"prefix": "#eif_",
+		"prefix": "eif_",
 		"body": "[#elseif (${1:condition})/]$0",
-		"description": "#elseif [#eif]",
+		"description": "#elseif [eif]",
 		"scope": "text.html.ftl"
 	},
 	"#if": {
-		"prefix": "#if",
+		"prefix": "if",
 		"body": "<#if (${1:condition})>\n\t$0\n</#if>",
-		"description": "#if (#if)",
+		"description": "#if (if)",
 		"scope": "text.html.ftl"
 	},
 	"#if_": {
-		"prefix": "#if_",
+		"prefix": "if_",
 		"body": "[#if (${1:condition})]\n\t$0\n[/#if]",
-		"description": "#if [#if]",
+		"description": "#if [if]",
 		"scope": "text.html.ftl"
 	},
 	"#li": {
-		"prefix": "#li",
+		"prefix": "li",
 		"body": "<#list ${1:collection} as ${2:element}>\n\t$0\n</#list>",
-		"description": "#list (#li)",
+		"description": "#list (li)",
 		"scope": "text.html.ftl"
 	},
 	"#li_": {
-		"prefix": "#li_",
+		"prefix": "li_",
 		"body": "[#list ${1:collection} as ${2:element}]\n\t$0\n[/#list]",
-		"description": "#list [#li]",
+		"description": "#list [li]",
 		"scope": "text.html.ftl"
 	},
 	"#g": {
-		"prefix": "#g",
+		"prefix": "g",
 		"body": "<#global ${1:var}=${2:value}/>$0",
-		"description": "#global short (#l)",
+		"description": "#global short (g)",
 		"scope": "text.html.ftl"
 	},
 	"#g_": {
-		"prefix": "#g_",
+		"prefix": "g_",
 		"body": "[#global ${1:var}=${2:value}/]$0",
-		"description": "#global short [#l]",
+		"description": "#global short [g]",
 		"scope": "text.html.ftl"
 	},
 	"#global": {
-		"prefix": "#global",
+		"prefix": "global",
 		"body": "<#global ${1:var}>${2:value}</#global>$0",
-		"description": "global long (#global)",
+		"description": "global long (global)",
 		"scope": "text.html.ftl"
 	},
 	"#global_": {
-		"prefix": "#global",
+		"prefix": "global",
 		"body": "[#global ${1:var}]${2:value}[/#global]$0",
-		"description": "global long [#global]",
+		"description": "global long [global]",
 		"scope": "text.html.ftl"
 	},
 	"#l": {
-		"prefix": "#l",
+		"prefix": "l",
 		"body": "<#local ${1:var}=${2:value}/>$0",
-		"description": "#local short (#l)",
+		"description": "#local short (l)",
 		"scope": "text.html.ftl"
 	},
 	"#l_": {
-		"prefix": "#l_",
+		"prefix": "l_",
 		"body": "[#local ${1:var}=${2:value}/]$0",
-		"description": "#local short [#l]",
+		"description": "#local short [l]",
 		"scope": "text.html.ftl"
 	},
 	"#local": {
-		"prefix": "#local",
+		"prefix": "local",
 		"body": "<#local ${1:var}>${2:value}</#local>$0",
-		"description": "local long (#local)",
+		"description": "local long (local)",
 		"scope": "text.html.ftl"
 	},
 	"#local_": {
-		"prefix": "#local_",
+		"prefix": "local_",
 		"body": "[#local ${1:var}]${2:value}[/#local]$0",
-		"description": "local long [#local]",
+		"description": "local long [local]",
 		"scope": "text.html.ftl"
 	},
 	"#include": {
-		"prefix": "#include",
+		"prefix": "include",
 		"body": "<#include \"${1:resource}\"/>",
-		"description": "#include (#include)",
+		"description": "#include (include)",
 		"scope": "text.html.ftl"
 	},
 	"#include_": {
-		"prefix": "#include_",
+		"prefix": "include_",
 		"body": "[#include \"${1:resource}\"/]",
-		"description": "#include [#include]",
+		"description": "#include [include]",
 		"scope": "text.html.ftl"
 	},
 	"#function": {
-		"prefix": "#function",
+		"prefix": "function",
 		"body": "<#function ${1:name} ${2:param1} ${3:param2}>\n\t<#return ($2 + $3)>$0\n</#function>",
-		"description": "#function / #return (#function)",
+		"description": "#function / #return (function)",
 		"scope": "text.html.ftl"
 	},
 	"#function_": {
-		"prefix": "#function_",
+		"prefix": "function_",
 		"body": "[#function ${1:name} ${2:param1} ${3:param2}]\n\t[#return ($2 + $3)]$0\n[/#function]",
-		"description": "#function / #return [#function]",
+		"description": "#function / #return [function]",
 		"scope": "text.html.ftl"
 	},
 	"#sw": {
-		"prefix": "#sw",
+		"prefix": "sw",
 		"body": "<#switch ${1:var}>\n\t<#case ${2:value1}/>$0\n\t\t<#break/>\n\t<#case ${3:value2}/>\n\t\t<#break/>\n\t<#default/>\n</#switch>",
-		"description": "#switch / #case / #default (#sw)",
+		"description": "#switch / #case / #default (sw)",
 		"scope": "text.html.ftl"
 	},
 	"#sw_": {
-		"prefix": "#sw_",
+		"prefix": "sw_",
 		"body": "[#switch ${1:var}]\n\t[#case ${2:value1}/]$0\n\t\t[#break/]\n\t[#case ${3:value2}/]\n\t\t[#break/]\n\t[#default/]\n[/#switch]",
-		"description": "#switch / #case / #default [#sw]",
+		"description": "#switch / #case / #default [sw]",
 		"scope": "text.html.ftl"
 	},
 	"#ca": {
-		"prefix": "#ca",
+		"prefix": "ca",
 		"body": "<#case ${1:value}/>\n\t$0\n\t<#break/>",
-		"description": "#case (#case)",
+		"description": "#case (case)",
 		"scope": "text.html.ftl"
 	},
 	"#ca_": {
-		"prefix": "#ca_",
+		"prefix": "ca_",
 		"body": "[#case ${1:value}/]\n\t$0\n\t[#break/]",
-		"description": "#case [#case]",
+		"description": "#case [case]",
 		"scope": "text.html.ftl"
 	},
 	"#imp": {
-		"prefix": "#imp",
+		"prefix": "imp",
 		"body": "<#import \"${1:libPath}\" as ${2:alias}/>\n$0",
-		"description": "#import <#import>",
+		"description": "#import (imp)",
 		"scope": "text.html.ftl"
 	},
 	"#imp_": {
-		"prefix": "#imp_",
+		"prefix": "imp_",
 		"body": "[#import \"${1:libPath}\" as ${2:alias}/]\n$0",
-		"description": "#import [#import]",
+		"description": "#import [imp]",
 		"scope": "text.html.ftl"
 	},
 	"#att": {
-		"prefix": "#att",
+		"prefix": "att",
 		"body": "<#attempt>\n\t$0\n<#recover/>\n\t\n</#attempt>",
-		"description": "#attempt / #recover (#att)",
+		"description": "#attempt / #recover (att)",
 		"scope": "text.html.ftl"
 	},
 	"#att_": {
-		"prefix": "#att_",
+		"prefix": "att_",
 		"body": "[#attempt]\n\t$0\n[#recover/]\n\t\n[/#attempt]",
-		"description": "#attempt / #recover [#att]",
+		"description": "#attempt / #recover [att]",
 		"scope": "text.html.ftl"
 	}
 }

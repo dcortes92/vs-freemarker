@@ -31,29 +31,29 @@ Type **#** followed by the first letters of a FreeMarker tag name and the editor
 
 Shortcut | Description 
 ---------|---------
-\#dir | Directive
-\#d | Simple Directive
-\#m | Macro definition
-@ma | Macro
-@m | Simple Macro
-\#a | #assign short
-\#assign | #assign long
-\#l | #local short
-\#local | #local long
-\#g | #global short
-\#global | #global long
-\#set | #setting short
-\#setting | #setting long
-\#if | #if
-\#e | #else
-\#eif | #elseif
-\#li | #list
-\#include | #include
-\#imp | #import
-\#function | #function / #return
-\#sw | #switch / #case / #default
-\#ca | #case
-\#att | #attempt / #recover
+dir | Directive
+d | Simple Directive
+mdef | Macro definition
+ma | Macro
+m | Simple Macro
+a | #assign short
+assign | #assign long
+l | #local short
+local | #local long
+g | #global short
+global | #global long
+set | #setting short
+setting | #setting long
+if | #if
+e | #else
+eif | #elseif
+li | #list
+include | #include
+imp | #import
+function | #function / #return
+sw | #switch / #case / #default
+ca | #case
+att | #attempt / #recover
 
 ## Contributing
 
