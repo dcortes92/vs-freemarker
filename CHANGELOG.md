@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.0.9](https://github.com/dcortes92/vs-freemarker/tree/0.0.9) (2017-04-11)
+[Full Changelog](https://github.com/dcortes92/vs-freemarker/compare/0.0.8...0.0.9)
+
+**Merged pull requests:**
+
+- VsCode upgrade prevents to use snippets starting with not alphanumeric characters [\#10](https://github.com/dcortes92/vs-freemarker/pull/10) ([vinlos](https://github.com/vinlos))
+
 ## [0.0.8](https://github.com/dcortes92/vs-freemarker/tree/0.0.8) (2017-02-03)
 [Full Changelog](https://github.com/dcortes92/vs-freemarker/compare/0.0.7...0.0.8)
 
