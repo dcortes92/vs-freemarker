@@ -38,7 +38,11 @@
         "snippets": [
             {
                 "language": "ftl",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/ftl.json"
+            },
+            {
+                "language": "ftl",
+                "path": "./snippets/html.json"
             }
         ]
     },
