@@ -1,3 +1,5 @@
+⚠️ This repository or library is not maintained by me anymore. If you want to contribute, feel free to ping me and I'll transfer ownership of the repo ⚠️
+
 # FreeMarker for Visual Studio Code
 FreeMarker language colorization extension for Visual Studio Code. You can read more about FreeMarker [here](http://freemarker.incubator.apache.org/).
 
