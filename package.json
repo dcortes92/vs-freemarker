@@ -23,7 +23,8 @@
                     "ftl"
                 ],
                 "extensions": [
-                    ".ftl"
+                    ".ftl",
+                    ".ftlh"
                 ],
                 "configuration": "./ftl.configuration.json"
             }
